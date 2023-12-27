@@ -1,0 +1,209 @@
+/* Normalization style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General style */
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+/* Main Var */
+:root {
+  --dark-blue-color: hsl(228, 56%, 26%);
+  --very-dark-blue-color: hsl(229, 57%, 11%);
+  --pale-blue-color: hsl(243, 100%, 93%);
+  --grayish-blue-color: hsl(229, 7%, 55%);
+}
+
+/* body */
+body {
+  background-color: var(--very-dark-blue-color);
+  background-image: url('./images/bg-desktop.png');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: var(--very-dark-blue-color);
+    background-image: url('./images/bg-mobile.png');
+    background-size: cover;
+  }
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+section {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 4rem;
+  min-width: 70%;
+  max-width: 100%;
+}
+
+section > div {
+  background-color: var(--dark-blue-color);
+  padding: 3rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+/* fylo */
+.fylo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 3rem 3rem;
+  max-width: 347px;
+  border-top-right-radius: 6rem;
+}
+
+.fylo .logo {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.fylo .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--very-dark-blue-color);
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+/* info */
+.info {
+  position: relative;
+  flex-grow: 1;
+  padding: 3rem;
+  min-width: 347px;
+}
+
+.info::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0.5rem solid transparent;
+  border-top-color: var(--pale-blue-color);
+  border-right-color: var(--pale-blue-color);
+}
+
+.info > span {
+  position: absolute;
+  right: 3rem;
+  top: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--pale-blue-color);
+  color: var(--grayish-blue-color);
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  border-bottom-right-radius: 0;
+}
+
+.info .num {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.info > p {
+  color: var(--grayish-blue-color);
+  font-size: 0.8rem;
+}
+
+.info > p span {
+  color: var(--pale-blue-color);
+}
+
+.info .used {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info .used .prog {
+  width: 100%;
+  margin: 1rem 0;
+  height: 0.9rem;
+  background-color: var(--pale-blue-color);
+  border-radius: 0.45rem;
+  -webkit-border-radius: 0.45rem;
+  -moz-border-radius: 0.45rem;
+  -ms-border-radius: 0.45rem;
+  -o-border-radius: 0.45rem;
+}
+
+.info .used .prog span {
+  position: relative;
+  display: block;
+  margin: 0.05rem;
+  height: 0.8rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.info .used .prog span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.04rem;
+  right: 0.05rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--pale-blue-color);
+  border-radius: 50%;
+}
+
+.info .used > p {
+  color: var(--pale-blue-color);
+  font-size: 0.6rem;
+}
