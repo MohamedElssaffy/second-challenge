@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git Repo]
-- Live Site URL: [Go Live]
+- Solution URL: [Git Repo](https://github.com/MohamedElssaffy/second-challenge)
+- Live Site URL: [Go Live](https://mohamedelssaffy.github.io/second-challenge/)
 
 ## My process
 
